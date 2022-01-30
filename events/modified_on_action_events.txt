@@ -22,7 +22,7 @@ country_event = {
 		if = {
 			# check if a country exists that tried to nominate a planet
 			limit = {
-				any_country = {
+				any_playable_country = {
 					is_country_type = default
 					has_country_flag = market_nomination_eligible
 					# only countries that have nominated at least one planet are eligible
@@ -37,7 +37,7 @@ country_event = {
 					}
 				}
 			}
-			random_country = {
+			random_playable_country = {
 				limit = {
 					is_country_type = default
 					has_country_flag = market_nomination_eligible
@@ -158,7 +158,7 @@ country_event = {
 		}
 		else = {
 			# establish randomly in a capital system
-			random_country = {
+			random_playable_country = {
 				limit = {
 					is_country_type = default
 					has_country_flag = market_nomination_eligible
